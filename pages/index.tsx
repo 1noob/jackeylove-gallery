@@ -6,7 +6,7 @@ import React, { useLayoutEffect, useRef, useState } from "react";
 import { CSSTransition } from "react-transition-group";
 import Script from "next/script";
 import shuffle from "lodash.shuffle";
-import { JackeyLoveLogo } from "./icon";
+import { JackeyLoveLogo } from "@/components/icon";
 
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const [loaded, setStatus] = useState(false);
