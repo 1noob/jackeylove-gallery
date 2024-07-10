@@ -53,7 +53,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
         unmountOnExit
       >
         <main>
-          <div className="gallery">
+          <div className="gallery md:shadow-[inset_0_0_360px_10px_rgba(0,0,0,0.6)]">
             <div className="animate-[scy_80s_linear_infinite] transform-gpu w-max grayscale-[50%]">
               <div className="float-left grid grid-rows-8 grid-flow-col">
                 {data.map(({ public_id, format }) => (
