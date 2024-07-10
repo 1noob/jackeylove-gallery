@@ -9,7 +9,7 @@
 }
 
 body {
-  @apply cursor-dot;
+  @apply cursor-none;
 }
 
 .gallery {

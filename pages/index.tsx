@@ -7,10 +7,14 @@ import { CSSTransition } from "react-transition-group";
 import Script from "next/script";
 import shuffle from "lodash.shuffle";
 import { JackeyLoveLogo } from "@/components/icon";
+import { useWindowSize } from "rooks";
 
 const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
   const [loaded, setStatus] = useState(false);
   const nodeRef = useRef(null);
+  const { innerWidth } = useWindowSize();
+
+  let images_len = innerWidth < 768 ? 40 : 160;
 
   const [data, setData] = useState(shuffle(images).slice(0, 160));
 
